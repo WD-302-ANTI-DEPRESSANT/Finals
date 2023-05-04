@@ -1,0 +1,285 @@
+/* Add application styles & imports to this file! */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* general styles */
+body {
+  font-family: Arial, sans-serif;
+  color: #444;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* header styles */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  height: 50px;
+  background-color: #0066cc;
+}
+
+nav {
+  flex: 1;
+  text-align: left;
+}
+
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+nav a {
+  color: #fff;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #0066cc;
+}
+
+.banner {
+  background-color: #59bec6;
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+
+.col-2 img {
+  max-width: 800px;
+  height: 700px;
+}
+
+.col-2 h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ff523b;
+  color: white;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 10px;
+  transition: background 0.5s;
+}
+
+.btn:hover {
+  background-color: #563434;
+}
+
+/* main content styles */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 100px;
+  overflow-x: hidden;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.article {
+  text-align: center;
+}
+.article-box {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 800px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+article {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+article h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+article p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.read-more {
+  background-color: #0066cc;
+  border: 2px solid #0066cc;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px 10px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.read-more:hover {
+  background-color: #fff;
+  color: #0066cc;
+}
+
+/* footer styles */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #212121;
+  border-top: 1px solid #ddd;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer li:last-child {
+  margin-right: 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  color: white;
+}
+
+/* About Us styles */
+section > h2:first-of-type {
+  font-size: 42px;
+  text-align: center;
+}
+
+section > p:first-of-type {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+/* Our Mission styles */
+section > h2:last-of-type {
+  font-size: 42px;
+  text-align: center;
+}
+
+section > p:last-of-type {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.about-us,
+.our-mission {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us .text,
+.our-mission .text {
+  width: 50%;
+}
+
+.about-us .image,
+.our-mission .image {
+  width: 50%;
+  text-align: center;
+}
+
+.about-us .image img {
+  max-width: 100%;
+}
+
+.our-mission .image img {
+  max-width: 100%;
+  order: -1;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 20px 0;
+  padding: 10px;
+  border-left: 5px;
+}

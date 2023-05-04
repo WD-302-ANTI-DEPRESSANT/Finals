@@ -1,0 +1,32 @@
+<section>
+  <div class="contact-container">
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form (submit)="sendMessage()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="location-contact-info">
+    <div class="location">
+      <h2>Contact Information</h2>
+      <p>
+        <i class="fa fa-map-marker"></i> 123 Main Street<br />
+        Anytown, USA 12345
+      </p>
+
+      <p><i class="fa fa-phone"></i> (123) 456-7890</p>
+      <p><i class="fa fa-envelope"></i> info@advocacycenter.com</p>
+    </div>
+  </div>
+</section>
